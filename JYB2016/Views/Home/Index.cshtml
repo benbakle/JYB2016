@@ -1,31 +1,47 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = null;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IndexPrototype</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="content-container col-md-8 col-lg-6">
+                <h1>The <span>Joel Young</span> Band</h1>
+                <ul class="desc-list list-inline">
+                    <li>Country</li>
+                    <li>Classic Rock</li>
+                    <li>Variety</li>
+                </ul>
+                <p>The Joel Young Band are a ragtag group of skillful musical philosophers who represent a broad cross-section of local musicians...</p>
+                <a href="#" class="btn btn-default">Contact Us</a>
+            </div>
+            <div class="logo-container col-md-4 col-lg-6">
+                <img src="~/images/logos/jyb-logo-425053.png" />
+            </div>
+        </div>
+    </header>
+    <div class="main-container ">
+        <div class="container">
+            TEST
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <footer></footer>
+</body>
+</html>
+<script src="~/Scripts/respond.min.js"></script>
+<script src="~/Scripts/jquery-3.1.0.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
