@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>IndexPrototype</title>
+    <title>JYB:: Joel Young Band</title>
 
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
@@ -33,15 +33,37 @@
                 <img src="~/images/logos/jyb-logo-425053.png" />
             </div>
         </div>
+        <div class="main-scroll-nav "><a href="/#shows" class="scroll-to"><span class="fa fa-angle-down "></span></a></div>
     </header>
-    <div class="main-container ">
-        <div class="container">
-            TEST
+    <main>
+        <div class="shows-summary-container container" id="shows">
+            <div class="row">
+                <div class="col-md-6 show-summary">
+                    <div class="col-md-5">
+                        <span class="day">sat</span>
+                        <div class="date-box">
+                            <span class="date">22</span>
+                        </div>
+                        <span class="month">October</span>
+                    </div>
+                    <div class="col-md-7">
+                        <span class="venue">Nikki's</span>
+                        <span class="time">10:00 - 2:00</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
     <footer></footer>
 </body>
 </html>
 <script src="~/Scripts/respond.min.js"></script>
 <script src="~/Scripts/jquery-3.1.0.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/js/ninja.js"></script>
+<script>
+    $(document).ready(function () {
+        $("scroll-to").scrollToID(1000);
+    });
+
+</script>
