@@ -210,7 +210,6 @@
         $(this).click(function (e) {
             e.preventDefault();
             myID = '#' + this.href.split("#")[1];
-
             try {
                 $("html, body").stop().animate({ scrollTop: $(myID).position().top }, speed, function () {
                     window.location = myID;
@@ -218,7 +217,6 @@
             }
             catch (err) {
                 window.location = this.href;
-                console.log(err.message);
             }
         });
     };

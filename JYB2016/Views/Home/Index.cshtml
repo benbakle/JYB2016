@@ -7,48 +7,133 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JYB:: Joel Young Band</title>
 
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/hamburgers.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="container">
-        <div class="row">
-            <div class="content-container col-md-8 col-lg-6">
-                <h1>The <span>Joel Young</span> Band</h1>
-                <ul class="desc-list list-inline">
-                    <li>Country</li>
-                    <li>Classic Rock</li>
-                    <li>Variety</li>
-                </ul>
-                <p>The Joel Young Band are a ragtag group of skillful musical philosophers who represent a broad cross-section of local musicians...</p>
-                <a href="#" class="btn btn-default">Contact Us</a>
-            </div>
-            <div class="logo-container col-md-4 col-lg-6">
-                <img src="~/images/logos/jyb-logo-425053.png" />
-            </div>
+    <div class="page-overlay initial">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-text">loading</div>
         </div>
-        <div class="main-scroll-nav "><a href="/#shows" class="scroll-to"><span class="fa fa-angle-down "></span></a></div>
-    </header>
+    </div>
+    <div class="menu-top-extension"><h4>JYB</h4></div>
+    <div class="menu-wrapper-nav">
+        <div class="ham-stack ham-to-x  menu-toggle">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+    </div>
+    <nav class="menu-wrapper">
+        <ul class="menu-list">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Shows</a></li>
+            <li><a href="javascript:void(0)">The Guys</a></li>
+            <li><a href="javascript:void(0)">Gallery</a></li>
+            <li><a href="javascript:void(0)">History</a></li>
+        </ul>
+        <div class="social-share">
+            <ul class="social-share-list ">
+                <li><a class="social-link facebook"></a></li>
+                <li><a class="social-link twitter"></a></li>
+                <li><a class="social-link google-plus"></a></li>
+                <li><a class="social-link youtube"></a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <div class="shows-summary-container container" id="shows">
-            <div class="row">
-                <div class="col-md-6 show-summary">
-                    <div class="col-md-5">
-                        <span class="day">sat</span>
-                        <div class="date-box">
-                            <span class="date">22</span>
-                        </div>
-                        <span class="month">October</span>
+        <div class="welcome-container" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="content-container col-md-8 col-lg-6">
+                        <h1>The <span>Joel Young</span> Band</h1>
+                        <ul class="desc-list list-inline">
+                            <li>Country</li>
+                            <li>Classic Rock</li>
+                            <li>Variety</li>
+                        </ul>
+                        <p>The Joel Young Band are a ragtag group of skillful musical philosophers who represent a broad cross-section of local musicians...</p>
+                        <a href="/#about" class="btn btn-default scroll-to">Contact Us</a>
+
                     </div>
-                    <div class="col-md-7">
-                        <span class="venue">Nikki's</span>
-                        <span class="time">10:00 - 2:00</span>
+                    <div class="logo-container col-md-4 col-lg-6">
+                        <img src="~/images/logos/jyb-logo-425053-low-res.png" id="logo" class="initial" />
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-nav down"><a href="/#shows" class="scroll-to"><span class="fa fa-angle-down "></span></a></div>
+        </div>
+
+        @*::SHOWS SUMMARY CONTAINER::*@
+        <div class="shows-summary-container" id="shows">
+            <div class="scroll-nav up"><a href="/#header" class="scroll-to"><span class="fa fa-angle-up "></span></a></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 show-summary-desc">
+                        <h2>JYB SHOWS</h2>
+                        <div class="jyb-hr">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Keep up to date with all JYB activity by subscribing to our Google calendar! Set a reminder so you won't miss the fun or any last
+                            minute shows!
+                        </p>
+                        <a href="#" class="btn btn-default btn-light">View Upcoming Shows</a>
+                    </div>
+                    <div class="col-md-offset-1 col-md-7">
+                        <div class="polaroid" style="background-image:url('../../images/stage-mic.jpg')">
+                            <p>The Stage is Set</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-nav down"><a href="/#about" class="scroll-to"><span class="fa fa-angle-down "></span></a></div>
+        </div>
+
+        @*::ABOUT CONTAINER::*@
+        <div class="about-container" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="polaroid" style="background-image:url('../../images/jyb-show.jpg')"></div>
+                        <div class="absolute-image-placeholder"></div>
+                        @*</div>
+                            <div class="col-md-6">*@
+                        <h2>JYB - BEHIND THE MUSIC</h2>
+                        <div class="jyb-hr">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Somewhere in between the demise of ButtonHead and the transformation of the multifaceted
+                            Amarillo was the birth of The Joel Young Band! This band has consumed some of the most
+                            seasoned countrified rockers in the Fort Wayne and surrounding areas. When ButtonHead
+                            broke up in May of 2009, Amarillo was looking for a singer to replace Doug Holt. Doug
+                            recently had a life-changing experience that wouldn't allow him to continue with Amarillo.
+                            Joel was happy to step in. Amarillo played the next 6 months with Joel until they went
+                            their separate ways that December. After a short stint with Big Fat Liar, Joel and the
+                            rest of the guys (John Mazza, Gary McMeekin) decided to rebuild the band but wanted a
+                            new name. After several weeks of debate, Scott Byler (previous drummer) suggested The
+                            Joel Young Band... no one complained. So it was decided... The Joel Young Band was
+                            born August 18th, 2010. (Appropriately,Joel's 43rd birthday) Since then, the band
+                            has evolved into an eclectic group of musicians providing a broad range of talent.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -57,13 +142,40 @@
     <footer></footer>
 </body>
 </html>
+
+
+
 <script src="~/Scripts/respond.min.js"></script>
 <script src="~/Scripts/jquery-3.1.0.min.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/lazysizes-core.js"></script>
 <script src="~/js/ninja.js"></script>
+
 <script>
     $(document).ready(function () {
-        $("scroll-to").scrollToID(1000);
+
+        setTimeout(function () {
+            $(".page-overlay").removeClass("initial");
+            $("#logo").removeClass("initial");
+        }, 2000);
+
+        $(".scroll-to").scrollToID(1000);
+        $(".menu-toggle").click(function () { toggleMenu(); })
+        $(".page-overlay").click(function () { toggleMenu(); })
+        $(".social-link").append("<span></span>");
+
+        $(".facebook").attr("href", "http://www.facebook.com/sharer/sharer.php?u=#http://www.joelyoungband.com");
+        $(".twitter").attr("href", "http://www.twitter.com/");
+        $(".google-plus").attr("href", "https://plus.google.com/");
+        $(".youtube").attr("href", "http://www.youtube.com");
+
     });
+
+    function toggleMenu() {
+        $(".page-overlay").toggleClass("active");
+        $(".menu-wrapper").toggleClass("active");
+        $("main").toggleClass("active");
+        $(".ham-stack").toggleClass("active");
+    }
 
 </script>
