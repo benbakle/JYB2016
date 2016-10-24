@@ -3,7 +3,7 @@
 @font-face { font-family: 'CinzelDecorative-Regular'; src: url('../fonts/CinzelDecorative-Regular.otf') format('opentype'), url('../fonts/CinzelDecorative-Regular.ttf') format('truetype'); }
 @font-face { font-family: 'Ovo-Regular'; src: url('../fonts/Ovo-Regular.otf') format('opentype'); }
 
-html { background: url('../images/guitar.jpg') no-repeat center fixed; background-size: cover; }
+html { background: url('../images/guitar-low-res.jpg') no-repeat center fixed; background-size: cover; }
 body { position: relative; font-family: Ovo-Regular; font-size: 18px; color: #ddd; background: inherit; }
 p { line-height: 40px; font-size: 22px; margin: 25px 0; }
 
