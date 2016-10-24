@@ -211,7 +211,7 @@
             e.preventDefault();
             myID = '#' + this.href.split("#")[1];
             try {
-                $("html, body").stop().animate({ scrollTop: $(myID).position().top }, speed, function () {
+                $("html, body").stop().animate({ scrollTop: $(myID).position().top}, speed, function () {
                     window.location = myID;
                 });
             }
