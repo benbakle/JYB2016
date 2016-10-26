@@ -121,13 +121,13 @@ main { display: block; position: relative; top: 100px; right: 0; transition: rig
 
     /* :: SHOW SUMMARY :: */
     main h2 { font-family: 'Stint Ultra Condensed', cursive; font-weight: 700; font-size: 65px; border-radius: 1px; padding: 5px 0; text-transform: uppercase; text-align: center; }
-    main .shows-summary-container { height: auto; min-height: calc(100vh - 75px); position: relative; background-color: rgba(66, 80, 83,1 ); width: 100%; color: #E0E0E0; padding-top: 100px; }
+    main .shows-summary-container { height: auto; min-height: calc(100vh - 75px); position: relative; background-color: rgba(66, 80, 83,1 ); width: 100%; color: #E0E0E0; padding-top: 50px; }
         main .shows-summary-container .show-summary-desc { text-align: center; }
 
     /* :: ABOUT SUMMARY:: */
     main .about-container { position: relative; height: auto; min-height: calc(100vh - 75px); background-color: #283133; padding-top: 80px; }
         main .about-container p { }
-        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; top:50px; }
+        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; padding-top:50px; }
             main .about-container .polaroid:hover { }
         main .about-container .absolute-image-placeholder { position: relative; display: inline-block; width: 525px; height: 535px; float: left; }
 
