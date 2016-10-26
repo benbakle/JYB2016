@@ -206,13 +206,15 @@
         }
     }
 
-    $.fn.scrollToID = function (speed) {
+    $.fn.scrollToID = function (speed, offset) {
+        offset = offset || 0
         $(this).click(function (e) {
             e.preventDefault();
             myID = '#' + this.href.split("#")[1];
+            var targetOffset = $(myID).offset().top + offset;
             try {
-                $("html, body").stop().animate({ scrollTop: $(myID).position().top}, speed, function () {
-                    window.location = myID;
+                $("html, body").stop().animate({ scrollTop: targetOffset}, speed, function () {
+                   // window.location = myID;
                 });
             }
             catch (err) {

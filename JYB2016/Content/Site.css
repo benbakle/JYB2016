@@ -8,7 +8,7 @@ body { position: relative; font-family: Ovo-Regular; font-size: 18px; color: #dd
 p { line-height: 40px; font-size: 22px; margin: 25px 0; }
 
 /* :: GLOBAL CLASSES :: */
-.polaroid { position: relative; transform: rotate(3deg); box-shadow: 5px 10px 30px #222; border-radius: 1px; margin-top: 25px; border: 25px solid rgb(255,255,245); border-bottom: 87.5px solid rgb(255,255,245); width: 468px; height: 487.5px; margin: 0 auto; background-size: cover; background-position: center; }
+.polaroid { position: relative; transform: rotate(3deg); box-shadow: 5px 10px 30px #222; border-radius: 1px; top: 50px; border: 25px solid rgb(255,255,245); border-bottom: 87.5px solid rgb(255,255,245); width: 468px; height: 487.5px; margin: 0 auto; background-size: cover; background-position: center; }
     .polaroid img { width: 100%; }
     .polaroid p { position: absolute; text-align: center; width: 100%; bottom: -65px; font: 400 18px 'Kaushan Script', cursive; color: #888; margin: 15px 0; }
 
@@ -120,13 +120,13 @@ main { display: block; position: relative; top: 100px; right: 0; transition: rig
 
     /* :: SHOW SUMMARY :: */
     main h2 { font-family: 'Stint Ultra Condensed', cursive; font-weight: 700; font-size: 65px; border-radius: 1px; padding: 5px 0; text-transform: uppercase; text-align: center; }
-    main .shows-summary-container { height: auto; min-height: 100vh; position: relative; background-color: rgba(66, 80, 83,1 ); width: 100%; color: #E0E0E0; padding-top: 100px; }
+    main .shows-summary-container { height: auto; min-height: calc(100vh - 75px); position: relative; background-color: rgba(66, 80, 83,1 ); width: 100%; color: #E0E0E0; padding-top: 25px; }
         main .shows-summary-container .show-summary-desc { text-align: center; }
 
     /* :: ABOUT SUMMARY:: */
-    main .about-container { position: relative; height: auto; min-height: 100vh; background-color: #283133; padding-top: 80px; }
+    main .about-container { position: relative; height: auto; min-height: calc(100vh - 75px); background-color: #283133; padding-top: 25px; }
         main .about-container p { }
-        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; top:35px; }
+        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; top:50px; }
             main .about-container .polaroid:hover { }
         main .about-container .absolute-image-placeholder { position: relative; display: inline-block; width: 525px; height: 535px; float: left; }
 
