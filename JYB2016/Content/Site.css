@@ -12,10 +12,17 @@ p { line-height: 40px; font-size: 22px; margin: 25px 0; }
     .polaroid img { width: 100%; }
     .polaroid p { position: absolute; text-align: center; width: 100%; bottom: -65px; font: 400 18px 'Kaushan Script', cursive; color: #888; margin: 15px 0; }
 
-.btn-default { box-sizing: border-box; letter-spacing: 5px; background-color: inherit; color: rgba(66, 80, 83,1 ); border: 2px solid rgb(66, 80, 83); border-radius: 1px; padding: 14px; font-size: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; transition: background-color 1s, color .5s; }
-    .btn-default:hover { background-color: rgba(66,80,83, 1); color: #fff; border: none; padding: 16px; }
-.btn-light.btn-default { background-color: rgba(66, 80, 83,1 ); color: #fff; border: 2px solid #fff; }
-    .btn-light.btn-default:hover { background-color: #fff; color: rgba(66,80,83, 1); border: none; padding: 16px; }
+.tiles { border: 15px solid #283133; height: 500px; background-size: cover; background-position: center; }
+.jeff { background-image: url('../images/members/jeff.jpg'); }
+.ben { background-image: url('../images/members/ben.jpg'); }
+.joel { background-image: url('../images/members/joel.jpg'); }
+.bob { background-image: url('../images/members/bob.jpg'); }
+.mitch { background-image: url('../images/members/mitch.jpg'); }
+
+.btn-default { background-color: transparent; color: rgba(132, 106, 104,1.0); border: 2px solid rgba(132, 106, 104,1.0); padding: 14px; box-sizing: border-box; letter-spacing: 5px; border-radius: 1px; font-size: 16px; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; transition: background-color 1s, color .5s; }
+    .btn-default:hover { background-color: rgba(132, 106, 104,1.0); color: #fff; border: none; padding: 16px; }
+.btn-light.btn-default { background-color: rgba(66, 80, 83, 1); color: #fff; border: 2px solid #fff; }
+    .btn-light.btn-default:hover { background-color: #fff; color: rgba(66, 80, 83, 1); border: none; padding: 16px; }
 
 .jyb-hr { width: 100%; text-align: center; margin: 20px 0 20px 0; }
     .jyb-hr .fa { padding: 0 20px; }
@@ -27,25 +34,81 @@ p { line-height: 40px; font-size: 22px; margin: 25px 0; }
     .scroll-nav.up { top: 0; }
 
 /* :: SOCIAL SHARE ::*/
+
 .social-share { position: relative; width: 100%; margin: 0 auto; }
-    .social-share:before { position: absolute; display: block; content: "Follow Us"; }
-ul.social-share-list { margin: 30px auto; padding: 0 0 0 0; list-style: none; width: 240px; }
+
+ul.social-share-list { margin: 0; padding: 0; list-style: none; float: left; width: 100%; }
+
     ul.social-share-list li { float: left; }
-a.social-link { display: inline-block; text-decoration: none; height: 40px; width: 40px; background-color: #333; color: #eee; border-radius: 20px; transform: rotate(0deg); text-align: center; margin: 10px; transition: .25s; }
-    a.social-link:hover { opacity: .5; }
-    a.social-link span { position: relative; font-size: 24px; top: 2px; font-family: FontAwesome; }
+
+a.social-link { display: inline-block; text-decoration: none; height: 52px; width: 52px; background-color: #333; color: #eee; border-radius: 26px; /*Change radius for differnt effects*/ text-align: center; margin: 4px; transition: background-color 1s; }
+
+    a.social-link span { position: relative; font-size: 26px; top: 7px; font-family: FontAwesome; }
+
+
 /* :: FACEBOOK :: */
-a.facebook { background-color: rgb(59, 89, 152); }
+
+a.facebook:hover { background-color: rgb(59, 89, 152); }
+
 .facebook span:after { content: "\f09a"; }
+
+
 /* :: TWITTER :: */
-a.twitter { background-color: rgb(85, 172, 238); }
+a.twitter:hover { background-color: rgb(85, 172, 238); }
+
 .twitter span:after { content: "\f099"; }
+
+
 /* :: GOOGLE PLUS :: */
-a.google-plus { background-color: rgb(221, 75, 57); }
+a.google-plus:hover { background-color: rgb(221, 75, 57); }
+
 .google-plus span:after { content: "\f0d5"; }
+
+
 /* :: YOU TUBE :: */
-a.youtube { background-color: rgb(187, 0, 0); }
+a.youtube:hover { background-color: rgb(187, 0, 0); }
+
 .youtube span:after { content: "\f167"; }
+
+/* :: LINKEDIN :: */
+a.linkedin:hover { background-color: rgb(0, 123, 181); }
+
+.linkedin span:after { content: "\f0e1"; }
+
+/* :: INSTAGRAM :: */
+a.instagram:hover { background-color: rgb(188, 42, 141); }
+
+.instagram span:after { content: "\f16d"; }
+
+/* :: PINTEREST :: */
+a.pinterest:hover { background-color: rgb( 203, 32, 39); }
+
+.pinterest span:after { content: "\f0d2"; }
+
+/* :: SNAPCHAT :: */
+a.snapchat:hover { background-color: rgb( 255, 252, 0); }
+
+.snapchat span:after { content: "\f2ab"; }
+/* :: TUMBLR :: */
+a.tumblr:hover { background-color: rgb( 50, 80, 109); }
+
+.tumblr span:after { content: "\f173"; }
+
+/* :: RSS :: */
+a.rss:hover { background-color: rgb( 255, 102, 0); }
+
+.rss span:after { content: "\f09e"; }
+
+/* :: GITHUB :: */
+a.github:hover { background-color: rgb( 0, 0, 0); }
+
+.github span:after { content: "\f09b"; }
+
+/* :: SPOTIFY :: */
+a.spotify:hover { background-color: rgb( 0, 228, 97); }
+
+.spotify span:after { content: "\f1bc"; }
+
 
 @media screen and (max-width: 992px) {
 }
@@ -78,8 +141,8 @@ ul.menu-list { list-style: none; margin: 0; padding: 75px 0 0 0; width: 320px; }
 
 /* :: HAMBURGER MENU :: */
 .ham-stack { display: block; width: 60px; overflow: hidden; padding: 10px; margin: 5px; border-left: 1px solid #555; cursor: pointer; background-color: rgba(0,0,0,.8); }
-    .ham-stack:hover .ham { background-color: rgba(76,155,224,.75); }
-.ham { display: block; position: relative; width: 100%; height: 5px; border-radius: 5px; background-color: rgba(76,155,224,1); margin: 7px auto; transform: rotate(0deg); left: 0; right: 0; top: 0px; transition: .5s; }
+    .ham-stack:hover .ham { background-color: rgba(132, 106, 104,1.0); }
+.ham { display: block; position: relative; width: 100%; height: 5px; border-radius: 5px; background-color: rgba(132, 106, 104,1.0); margin: 7px auto; transform: rotate(0deg); left: 0; right: 0; top: 0px; transition: .5s; }
 .ham-to-x.ham-stack.active .ham:first-child { transform: rotate(45deg); top: 12px; }
 .ham-to-x.ham-stack.active .ham:nth-child(2) { left: 150px; }
 .ham-to-x.ham-stack.active .ham:last-child { transform: rotate(-45deg); top: -12px; }
@@ -109,8 +172,8 @@ main { display: block; position: relative; top: 100px; right: 0; transition: rig
             main .welcome-container .content-container h1 { color: rgba(66, 80, 83, 1); font-family: 'Stint Ultra Condensed', cursive; font-weight: 700; font-size: 65px; text-align: center; border-radius: 1px; padding: 5px 0; text-transform: uppercase; }
             main .welcome-container .content-container p { }
             main .welcome-container .content-container img { display: block; width: 50%; margin: 0 auto; }
-            main .welcome-container .content-container ul.desc-list { display: block; list-style: none; width: 100%; margin: 0 auto; border-top: 1px solid rgba(135, 126, 106, 1); border-bottom: 1px solid rgba(135, 126, 106, 1); padding: 10px 5px; }
-                main .welcome-container .content-container ul.desc-list li { font-size: 14px; font-family: 'CinzelDecorative-Bold'; letter-spacing: 3px; }
+            main .welcome-container .content-container ul.desc-list { display: block; list-style: none; width: 100%; margin: 0 auto; border-top: 1px solid rgba(132, 106, 104,1.0); border-bottom: 1px solid rgba(132, 106, 104,1.0); padding: 10px 5px; }
+                main .welcome-container .content-container ul.desc-list li { font-size: 14px; font-family: 'CinzelDecorative-Bold'; letter-spacing: 3px; color: rgba(132, 106, 104,1.0); }
                     main .welcome-container .content-container ul.desc-list li:nth-child(1) { width: 25%; text-align: left; }
                     main .welcome-container .content-container ul.desc-list li:nth-child(2) { width: 45%; text-align: center; }
                     main .welcome-container .content-container ul.desc-list li:nth-child(3) { width: 25%; text-align: right; }
@@ -127,7 +190,7 @@ main { display: block; position: relative; top: 100px; right: 0; transition: rig
     /* :: ABOUT SUMMARY:: */
     main .about-container { position: relative; height: auto; min-height: calc(100vh - 75px); background-color: #283133; padding-top: 80px; }
         main .about-container p { }
-        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; padding-top:50px; }
+        main .about-container .polaroid { position: absolute; cursor: pointer; transform: rotate(-3deg); transition: 1s; background-position-x: -185px; padding-top: 50px; }
             main .about-container .polaroid:hover { }
         main .about-container .absolute-image-placeholder { position: relative; display: inline-block; width: 525px; height: 535px; float: left; }
 

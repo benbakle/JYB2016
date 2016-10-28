@@ -238,6 +238,11 @@
     <Content Include="images\logos\jyb-logo-425053.png" />
     <Content Include="images\logos\jyb-logo-light.png" />
     <Content Include="images\logos\jyb-logo.png" />
+    <Content Include="images\members\ben.jpg" />
+    <Content Include="images\members\bob.jpg" />
+    <Content Include="images\members\jeff.jpg" />
+    <Content Include="images\members\joel.jpg" />
+    <Content Include="images\members\mitch.jpg" />
     <Content Include="images\stage-mic.jpg" />
     <Content Include="js\ninja.js" />
     <Content Include="Scripts\bootstrap.js" />
